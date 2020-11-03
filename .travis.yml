@@ -1,0 +1,12 @@
+language: julia
+
+os:
+  - linux
+
+julia:
+  - 1
+
+notifications:
+  email:
+    on_success: always
+    on_failure: always
