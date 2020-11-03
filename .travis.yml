@@ -10,3 +10,5 @@ notifications:
   email:
     on_success: always
     on_failure: always
+
+script: julia --project testes.jl
