@@ -23,6 +23,17 @@ function valor(σ::Int, mantissa::Vector{Int}, b::Int, E::Int)
     return x
 end
 
+"""
+    σ, mantissa, b, E = converte(x, b)
+
+Converte o número `x` para a forma de ponto flutuante na base `b`.
+
+- `x` deve ser inteiro entre -50000 e 50000;
+- `b` deve ser inteiro entre 2 e 16.
+
+Exemplos:
+- `converte(6, 2)` deve retornar `1, [1, 1], 2, 3`.
+"""
 function converte(x::Int, b::Int)
     if x < 0
         return -1, Int[], 2, 0
